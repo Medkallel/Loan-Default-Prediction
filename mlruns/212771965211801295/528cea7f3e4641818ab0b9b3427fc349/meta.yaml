@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/212771965211801295/528cea7f3e4641818ab0b9b3427fc349/artifacts
+deleted_time: 1725677051698
+end_time: 1725676709589
+entry_point_name: ''
+experiment_id: '212771965211801295'
+lifecycle_stage: deleted
+run_id: 528cea7f3e4641818ab0b9b3427fc349
+run_name: Logistic_regression_balanced_linear
+run_uuid: 528cea7f3e4641818ab0b9b3427fc349
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725676705816
+status: 3
+tags: []
+user_id: edith
