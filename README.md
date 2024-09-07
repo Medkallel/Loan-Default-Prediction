@@ -107,7 +107,10 @@ $ pip install -r requirements.txt
 ---
 ## Usage 
 
-1. **Use the App** Just run the app.py
+1. To use the App, Just run the app.py
+```sh
+python3 app.py
+```
 ---
 ## Project structure
 ```sh
