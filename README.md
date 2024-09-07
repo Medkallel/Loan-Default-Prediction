@@ -8,6 +8,7 @@
 -   [Description](#description)
 -   [Objectives](#objectives)
 -   [Notebooks Overview](#notebooks-overview)
+-   [Using Docker](#using-docker)
 -   [Installation](#installation)
 -   [Usage](#usage)
 -   [Project Structure](#project-structure)
@@ -51,7 +52,6 @@ The main objective of this project is build an image and a pipeline with all the
 4. **App Deployment**: Create a CI/CD pipeline.
 
 ---
-
 ## Notebooks Overview
 
 1. **¨Exploratory_Data_Analysis.ipynb**:
@@ -59,7 +59,52 @@ The main objective of this project is build an image and a pipeline with all the
 2. **¨Loan_Default_Prediciont_Models.ipynb**:
    - This notebook contains the models fitting, evaluation and mlflow setup.
 ---
+## Using Docker
+#### 1. Pulling the Docker Image
+To pull the Docker image from Docker Hub, run the following command:
+```sh
+# Pull the docker image
+$ docker pull medkallel/dunhumby-the-complete-journey-dashboard:latest
 
+# Or if you downloaded the .tar image
+$ docker load -i dunhumby-the-complete-journey-dashboard.tar
+```
+#### 2. Building the Docker Image
+If you prefer to build the Docker image locally, navigate to the project directory and run:
+
+```sh
+# Build the docker image
+$ docker build -t dunhumby-the-complete-journey-dashboard .
+```
+#### 3. Running the Docker Container
+To run the Docker container, use the following command:
+```sh
+# Run the docker container
+$ docker run -p 8501:8501 dunhumby-the-complete-journey-dashboard
+```
+> [!TIP] 
+> You can access the app on another device by following the link: ```http://<server-ip>:8501```
+---
+## Installation
+
+> [!IMPORTANT]
+> The project was done on Python 3.11.6
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+```sh
+# Clone the repository
+$ git clone https://github.com/Medkallel/Dunhumby-The-complete-Journey-Dashboard
+# Navigate into the directory
+$ cd Dunhumby-The-complete-Journey-Dashboard
+```
+2. Install the required dependencies:
+```sh
+# Install the requirements
+$ pip install -r requirements.txt
+```
+---
 ## Usage 
 
 1. **Use the App** Just run the app.py
