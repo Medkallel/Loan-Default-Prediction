@@ -12,14 +12,9 @@ def model_pred(features):
     prediction = model.predict(test_data)
     return int(prediction[0])
 
-loa_mean = 4159.68
-loa_std = 1421.40
 
-tdo_mean = 8718.92
-tdo_std = 6627.16
-
-income_mean = 70039.90
-income_std = 20072.21
+df = pd.read_csv('Data\Loan_Data_Describe.csv')
+df = df.loc[[1, 2]].reset_index(drop=True)
 
 @app.route("/", methods=["GET"])
 def Home():
@@ -30,17 +25,22 @@ def Home():
 def predict():
     if request.method == "POST":
         credit_lines_outstanding = int(request.form["credit_lines_outstanding"])
+
         loan_amt_outstanding = float(request.form["loan_amt_outstanding"])
-        loan_amt_outstanding = (loan_amt_outstanding - loa_mean) / loa_std
+        loan_amt_outstanding = (loan_amt_outstanding - df.iloc[0,0]) / df.iloc[1, 0]
 
         total_debt_outstanding = float(request.form["total_debt_outstanding"])
-        total_debt_outstanding = (total_debt_outstanding - tdo_mean) / tdo_std
+        total_debt_outstanding = (total_debt_outstanding - df.iloc[0,1]) / df.iloc[1, 1]
 
         income = float(request.form["income"])
-        income = (income - income_mean) / income_std
+        income = (income - df.iloc[0,2]) / df.iloc[1, 2]
 
         years_employed = int(request.form["years_employed"])
+        income = (income - df.iloc[0,3]) / df.iloc[1, 3]
+
         fico_score = int(request.form["fico_score"])
+        income = (income - df.iloc[0,4]) / df.iloc[1, 4]
+
         prediction = model.predict(
             [[credit_lines_outstanding, loan_amt_outstanding, total_debt_outstanding, income, years_employed, fico_score]]
         )
