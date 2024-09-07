@@ -4,7 +4,7 @@ import pandas as pd
 
 
 app = Flask(__name__)
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("Models\model.pkl", "rb"))
 
 
 def model_pred(features):
@@ -15,6 +15,7 @@ def model_pred(features):
 
 df = pd.read_csv('Data\Loan_Data_Describe.csv')
 df = df.loc[[1, 2]].reset_index(drop=True)
+
 
 @app.route("/", methods=["GET"])
 def Home():
@@ -27,19 +28,19 @@ def predict():
         credit_lines_outstanding = int(request.form["credit_lines_outstanding"])
 
         loan_amt_outstanding = float(request.form["loan_amt_outstanding"])
-        loan_amt_outstanding = (loan_amt_outstanding - df.iloc[0,0]) / df.iloc[1, 0]
+        loan_amt_outstanding = (loan_amt_outstanding - df.iloc[0,1]) / df.iloc[1, 1]
 
         total_debt_outstanding = float(request.form["total_debt_outstanding"])
-        total_debt_outstanding = (total_debt_outstanding - df.iloc[0,1]) / df.iloc[1, 1]
+        total_debt_outstanding = (total_debt_outstanding - df.iloc[0,2]) / df.iloc[1, 2]
 
         income = float(request.form["income"])
-        income = (income - df.iloc[0,2]) / df.iloc[1, 2]
-
-        years_employed = int(request.form["years_employed"])
         income = (income - df.iloc[0,3]) / df.iloc[1, 3]
 
-        fico_score = int(request.form["fico_score"])
+        years_employed = int(request.form["years_employed"])
         income = (income - df.iloc[0,4]) / df.iloc[1, 4]
+
+        fico_score = int(request.form["fico_score"])
+        income = (income - df.iloc[0,5]) / df.iloc[1, 5]
 
         prediction = model.predict(
             [[credit_lines_outstanding, loan_amt_outstanding, total_debt_outstanding, income, years_employed, fico_score]]
