@@ -70,17 +70,27 @@ The main objective of this project is build an image and a pipeline with all the
 ├── 📁.github/
 │   └── 📁workflows/
 │       └── aws.yaml
+├── 📁Data/
+│   ├── 🗃️Loan_Data_Describe.csv # Describe data used to denormalize
+│   ├── 🗃️Loan_Data.csv # Initial Dataset
+│   └── 🗃️Processed_Loan_Data.csv 
+│ 
+├── 📁Models/
+│   └── 🤖model.pkl
+│
+├── 📁mlartifacts/ # Contains mlflow artifacts for runs
+├── 📁mlruns/ # Contains mlflow runs logs
+│ 
 ├── 📁templates/
 │   └── index.html
-├── 📁Models/
-│   └── 🗃️model.pkl
 ├── 🐍app.py
-├── 🐍Projet_ML_Ops.ipynb
-├── 🐍test.py
+├── 📓Exploratory_Data_Analysis.ipynb
+├── 📓Loan_Default_Prediction_Models.ipynb
 ├── 📄requirements.txt
 ├── 📄.dockerignore
 ├── 📄.gitignore
 ├── 📄Dockerfile
+├── 📄LICENCE.md
 └── 📄README.md
 ```
 
