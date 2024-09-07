@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/212771965211801295/600081f3f93e41be9999a387015083b0/artifacts
+end_time: 1725698386186
+entry_point_name: ''
+experiment_id: '212771965211801295'
+lifecycle_stage: active
+run_id: 600081f3f93e41be9999a387015083b0
+run_name: Random_Forest
+run_uuid: 600081f3f93e41be9999a387015083b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725698382524
+status: 3
+tags: []
+user_id: edith
