@@ -64,23 +64,20 @@ The main objective of this project is build an image and a pipeline with all the
 To pull the Docker image from Docker Hub, run the following command:
 ```sh
 # Pull the docker image
-$ docker pull medkallel/dunhumby-the-complete-journey-dashboard:latest
-
-# Or if you downloaded the .tar image
-$ docker load -i dunhumby-the-complete-journey-dashboard.tar
+$ docker pull medkallel/loan-default-prediction:latest
 ```
 #### 2. Building the Docker Image
 If you prefer to build the Docker image locally, navigate to the project directory and run:
 
 ```sh
 # Build the docker image
-$ docker build -t dunhumby-the-complete-journey-dashboard .
+$ docker build -t loan-default-prediction .
 ```
 #### 3. Running the Docker Container
 To run the Docker container, use the following command:
 ```sh
 # Run the docker container
-$ docker run -p 8501:8501 dunhumby-the-complete-journey-dashboard
+$ docker run -p 5000:5000 Loan-Default-Prediction
 ```
 > [!TIP] 
 > You can access the app on another device by following the link: ```http://<server-ip>:8501```
@@ -95,9 +92,9 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 ```sh
 # Clone the repository
-$ git clone https://github.com/Medkallel/Dunhumby-The-complete-Journey-Dashboard
+$ git clone https://github.com/Medkallel/Loan-Default-Prediction.git
 # Navigate into the directory
-$ cd Dunhumby-The-complete-Journey-Dashboard
+$ cd Loan-Default-Prediction
 ```
 2. Install the required dependencies:
 ```sh
@@ -109,7 +106,7 @@ $ pip install -r requirements.txt
 
 1. To use the App, Just run the app.py
 ```sh
-python app.py
+$ python app.py
 ```
 ---
 ## Project structure
