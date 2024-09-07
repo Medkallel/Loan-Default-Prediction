@@ -2,6 +2,7 @@ alembic==1.13.2
 aniso8601==9.0.1
 asttokens==2.4.1
 attrs==24.2.0
+black==24.8.0
 blinker==1.8.2
 cachetools==5.5.0
 certifi==2024.8.30
@@ -48,6 +49,7 @@ matplotlib==3.9.2
 matplotlib-inline==0.1.7
 mlflow==2.16.0
 mlflow-skinny==2.16.0
+mypy-extensions==1.0.0
 nbformat==5.10.4
 nest-asyncio==1.6.0
 numpy==2.1.1
@@ -57,6 +59,7 @@ opentelemetry-semantic-conventions==0.48b0
 packaging==24.1
 pandas==2.2.2
 parso==0.8.4
+pathspec==0.12.1
 patsy==0.5.6
 pexpect==4.9.0
 pillow==10.4.0
