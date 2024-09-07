@@ -1,5 +1,6 @@
 # Loan Default Prediction
 
+![banner](banner.jpg)
 
 ## Table of Contents
 
