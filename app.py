@@ -2,10 +2,12 @@ from flask import Flask, render_template, request
 import pickle
 import pandas as pd
 
+model_path = "Models/model.pkl"
+data_describe_path = "Data/Loan_Data_Describe.csv"
 
 app = Flask(__name__)
 
-model = pickle.load(open("Models/model.pkl", "rb"))
+model = pickle.load(open(model_path, "rb"))
 
 
 def model_pred(features):
@@ -14,7 +16,7 @@ def model_pred(features):
     return int(prediction[0])
 
 
-df = pd.read_csv('Data\Loan_Data_Describe.csv')
+df = pd.read_csv(data_describe_path)
 df = df.loc[[1, 2]].reset_index(drop=True)
 
 
