@@ -1,4 +1,4 @@
-# Projet ML Ops Loan Default App
+# Loan Default Prediction
 
 
 ## Table of Contents
@@ -54,11 +54,10 @@ The main objective of this project is build an image and a pipeline with all the
 
 ## Notebooks Overview
 
-1. **app.py**:
-   - This is the predictive python app.
-
-2. **¨Projet_ML_Ops.ipynb**:
-   - This notebook contains the data preprocessing, the model training, and the creation of the experiment with MLflow.
+1. **¨Exploratory_Data_Analysis.ipynb**:
+   - This notebook contains the data exploration, analysis & preprocessing.
+2. **¨Loan_Default_Prediciont_Models.ipynb**:
+   - This notebook contains the models fitting, evaluation and mlflow setup.
 ---
 
 ## Usage 
@@ -69,19 +68,20 @@ The main objective of this project is build an image and a pipeline with all the
 ```sh
 📦 mlops-project/
 ├── 📁.github/
-│   ├── 📁workflows/
-│       ├── aws.yaml
+│   └── 📁workflows/
+│       └── aws.yaml
 ├── 📁templates/
-│   ├── index.html
+│   └── index.html
+├── 📁Models/
+│   └── 🗃️model.pkl
+├── 🐍app.py
+├── 🐍Projet_ML_Ops.ipynb
+├── 🐍test.py
+├── 📄requirements.txt
 ├── 📄.dockerignore
 ├── 📄.gitignore
 ├── 📄Dockerfile
-├── 📄README.md
-├── 🐍app.py
-├── 🗃️model.pkl
-├── 🐍Projet_ML_Ops.ipynb
-├── 📄requirements.txt
-└── 🐍test.py
+└── 📄README.md
 ```
 
 ---
