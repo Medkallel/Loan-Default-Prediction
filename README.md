@@ -60,7 +60,7 @@ $ docker build -t loan-default-prediction .
 To run the Docker container, use the following command:
 ```sh
 # Run the docker container
-$ docker run -p 5000:5000 Loan-Default-Prediction
+$ docker run -p 5000:5000 loan-default-prediction
 ```
 > [!TIP] 
 > You can access the app on another device by following the link: ```http://<server-ip>:8501```
