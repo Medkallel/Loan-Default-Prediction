@@ -7,6 +7,7 @@
 -   [Technologies Used](#technologies-used)
 -   [Description](#description)
 -   [Objectives](#objectives)
+-   [Presentation](#presentation)
 -   [Notebooks Overview](#notebooks-overview)
 -   [Using Docker](#using-docker)
 -   [Installation](#installation)
@@ -33,6 +34,11 @@ The main objective of this project is build an image and a pipeline with all the
 2. **Model Engineering**: Test at least two classification algorithms.
 3. **Model Tracking**: Tracking the metrics and artifacts of the model with MLflow.
 4. **App Deployment**: Create a CI/CD pipeline.
+---
+
+## Presentation
+
+A **presentation** is available as a **PDF** file in the repo ```Loan_Default_Prediction_MLOPS_Presentation.pdf``` & also as a **Canva/Powerpoint** presentation through the following link: [Presentation Link](https://www.canva.com/design/DAGQGXGl6cY/MxnDDFWOFYTaYfHhl0eRFg/view?utm_content=DAGQGXGl6cY&utm_campaign=designshare&utm_medium=link&utm_source=editor).
 
 ---
 ## Notebooks Overview
@@ -119,7 +125,8 @@ $ python app.py
 ├── 📄.gitignore
 ├── 📄Dockerfile
 ├── 📄LICENCE.md
-└── 📄README.md
+├── 📄README.md
+└── 📄Loan_Default_Prediction_MLOPS_Presentation.pdf
 ```
 
 ---
