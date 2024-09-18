@@ -129,15 +129,6 @@ $ python app.py
 └── 📄Loan_Default_Prediction_MLOPS_Presentation.pdf
 ```
 
----
-
-## 📫 Contact me
-<p>
-<a href="https://www.linkedin.com/in/mohamed-kallel/">
-<img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a> 
-<br>
-</p>
 
 ---
 
@@ -148,6 +139,15 @@ This project was developed by a collaborative team. Each member played a crucial
 - **Mohamed Kallel**
 - **Jean Christophe Rigoni**
 - **Simon Pierre Rodner**
+---
+
+## 📫 Contact me
+<p>
+<a href="https://www.linkedin.com/in/mohamed-kallel/">
+<img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a> 
+<br>
+</p>
 ---
 
 
