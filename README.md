@@ -140,18 +140,6 @@ This project was developed by a collaborative team. Each member played a crucial
 - **Jean Christophe Rigoni**
 - **Simon Pierre Rodner**
 ---
-
-## 📫 Contact me
-<p>
-<a href="https://www.linkedin.com/in/mohamed-kallel/">
-<img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a> 
-<br>
-</p>
----
-
-
-
 ## License
 This project is under the **CC BY-NC 4.0 License**. For more information, refer to the license file. <br/>
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
